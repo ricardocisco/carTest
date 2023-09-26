@@ -1,0 +1,511 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+:root {
+  --cor-azul: #3563e9;
+  --cor-texto: #030303;
+  --cor-cinza: #929395;
+  --botao: #3083ff;
+  --cor-branca: #fff;
+  --gradient-xp: #f1f3fc;
+  --footer: #1e242d;
+  --botao-hover: #87b5fb;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--cor-texto);
+}
+
+.blue {
+  color: var(--cor-azul);
+}
+
+/*Navbar*/
+
+.navbar {
+  display: flex;
+  margin-top: 20px;
+  margin: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lista-navbar {
+  display: flex;
+  padding: 10px;
+}
+
+.title-nav {
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--cor-azul);
+}
+
+.span-nav {
+  font-weight: bold;
+}
+
+.text-list {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 22px;
+  height: 3px;
+  background-color: var(--cor-texto);
+  margin: 3px 0;
+}
+
+/* Hero */
+
+.hero {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.text-hero {
+  font-size: 64px;
+}
+
+.text-hero-paragraph {
+  font-size: 19px;
+  color: var(--cor-cinza);
+}
+
+.carro {
+  width: 500px;
+}
+
+.lojas {
+  width: 20%;
+}
+
+/* Search Box */
+.search {
+  margin-top: 50px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 16px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 75px;
+  width: 1000px;
+  box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-location-label {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.input-style {
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  outline: 0;
+}
+
+.botao-search {
+  background-color: var(--botao);
+  padding: 10px 60px;
+  border: none;
+  border-radius: 5px;
+  color: var(--cor-branca);
+  font-size: 18px;
+}
+.botao-search:hover
+{
+    background-color: var(--botao-hover);
+}
+
+.container-locacao {
+  display: flex;
+  width: 100%;
+}
+
+/* Main Localizacao*/
+
+/* Marcas */
+
+.brand {
+  display: flex;
+  width: 100%;
+}
+
+.brand-box {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.brand-list {
+  width: 60px;
+  margin-top: 50px;
+  margin: 30px;
+}
+
+/*Como Funciona */
+.como-funciona {
+  display: flex;
+  width: 100%;
+}
+
+.como-funciona-box {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.como-funciona-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.como-funciona-title-h3 {
+  font-size: 16px;
+  color: var(--cor-cinza);
+}
+
+.como-funciona-title-h2 {
+  font-size: 32px;
+}
+
+.como-funciona-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card-como-funciona {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.card-img {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  height: 110px;
+  width: 110px;
+  padding: 35px;
+  background-color: var(--cor-branca);
+  border-radius: 16px;
+  box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-azul {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  height: 110px;
+  width: 110px;
+  padding: 35px;
+  background: linear-gradient(to bottom, #3083ff, #87b5fb);
+  border-radius: 16px;
+  box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-h4 {
+  align-self: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.card-p {
+  margin-top: 20px;
+  color: var(--cor-cinza);
+  font-size: 16px;
+}
+
+/* EXPERIENCIA (FOTO) */
+.bg {
+  display: flex;
+  width: 100%;
+  height: 600px;
+}
+.bg-exp {
+  margin: 0 auto;
+  display: flex;
+}
+
+.bg-img img {
+  width: 600px;
+  height: 600px;
+}
+
+.bg-exp-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+.bg-exp-box h3 {
+  font-weight: 500;
+  color: #acadb3;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1.96px;
+  text-transform: uppercase;
+}
+
+.bg-exp-box p {
+  color: #1d1e21;
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 39.68px;
+  letter-spacing: 0.4px;
+  word-wrap: break-word;
+}
+/*Estilo do Card*/
+.card {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.card img {
+  max-width: 100px;
+  margin-right: 15px;
+  background-color: #f1f1f1;
+  width: 60px;
+  padding: 18px;
+  border-radius: 15px;
+}
+.card .content {
+  flex: 1;
+}
+.card .content h2 {
+  font-size: 1rem;
+  margin: 0;
+  color: #1d1e21;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 100;
+  letter-spacing: 0.23px;
+}
+.card .content p {
+  margin: 10px 0;
+  color: #929395;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 20.16px;
+  letter-spacing: 0.14px;
+}
+
+/*Rodape*/
+.rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 160px;
+  background-color: #1e242d;
+  padding: 60px;
+}
+.rodape-title h5
+{
+    font-size: 32px;
+    color: var(--cor-branca);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.rodape-title h5 span
+{
+    font-weight: 600;
+}
+.rodape-redes .rodape-list
+{
+    display: flex;
+    justify-content: space-between;
+}
+.rodape-redes p
+{
+    font-size: 28px;
+    color: var(--cor-branca);
+}
+
+.rodape-list i 
+{
+    font-size: 25px;
+    color: var(--cor-branca);
+    border: 1px var(--cor-branca) solid;
+    padding: 9px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+/* MediaQueria */
+
+@media (max-width: 1080px) {
+  .text-hero {
+    font-size: 40px;
+  }
+  .lojas-box {
+    display: flex;
+  }
+  .lojas {
+    margin: 1px;
+    width: 50%;
+  }
+  .search {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .input-style {
+    padding: 3px;
+  }
+  .botao-search {
+    padding: 10px 30px;
+  }
+  .bg-img img {
+    height: 450px;
+    width: 450px;
+  }
+}
+@media (max-width: 976px) {
+  .brand-list {
+    width: 50px;
+    margin: 5px;
+  }
+  .bg-img img {
+    height: 360px;
+    width: 360px;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    display: block;
+    width: 90%;
+  }
+  .lista-navbar {
+    display: none;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+  .lojas {
+    width: 30%;
+  }
+  .lista-navbar.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .carro {
+    width: 90%;
+  }
+  .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .search-box {
+    width: 90%;
+  }
+  .botao-search {
+    margin-top: 30px;
+    padding: 10px 30px;
+  }
+  .brand-list {
+    width: 30px;
+    margin: 10px;
+  }
+  .como-funciona-title-h2 {
+    font-size: 16px;
+  }
+  .como-funciona-hero {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-como-funciona {
+    margin-top: 5px;
+  }
+  .card-img,
+  .card-img-azul {
+    width: 80px;
+    height: 80px;
+    padding: 25px;
+  }
+  .bg-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .bg-exp {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bg-exp-box {
+    width: 100%;
+  }
+  .bg-exp-box h3 {
+    font-size: 12px;
+  }
+  .bg-exp-box p {
+    font-size: 24px;
+  }
+  .bg-box-card {
+    padding: 20px;
+  }
+
+  .rodape {
+    margin-top: 480px;
+    padding: 10px;
+
+  }
+  .rodape-title h5
+    {
+        font-size: 20px;
+    }
+    .rodape-redes p
+    {
+        font-size: 20px;
+        color: var(--cor-branca);
+    }
+
+    .rodape-list i 
+    {
+        font-size: 14px;
+        padding: 6px;
+        margin: 2px;
+    }
+}
