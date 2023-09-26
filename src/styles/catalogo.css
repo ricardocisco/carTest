@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+:root {
+  --cor-azul: #3563e9;
+  --cor-texto: #030303;
+  --cor-cinza: #929395;
+  --botao: #3083ff;
+  --cor-branca: #fff;
+  --gradient-xp: #f1f3fc;
+  --footer: #1e242d;
+  --botao-hover: #87b5fb;
+
+  --information-500: rgba(84, 166, 255, 1);
+  --primary-0: rgba(255, 255, 255, 1);
+  --primary-500: rgba(53, 99, 233, 1);
+  --semibold-type-32-font-family: "PlusJakarta Sans-SemiBold", Helvetica;
+  --semibold-type-32-font-weight: 600;
+  --semibold-type-32-font-size: 32px;
+  --semibold-type-32-letter-spacing: -0.96px;
+  --semibold-type-32-line-height: 150%;
+  --semibold-type-32-font-style: normal;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--cor-texto);
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #929395;
+}
+.navbar-box
+{   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    height: 80px;
+    margin: 0 auto;
+
+}
+.navbar h2 {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--cor-azul);
+}
+  
+.navbar span {
+    font-weight: bold;
+}
+.dashboard
+{
+    display: flex;
+    align-items: center;
+}
+.dashboard h3
+{
+    font-size: 18px;
+    font-weight: 500;
+    color: #929395;
+}
+.dashboard-list
+{
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-list li
+{
+    margin: 10px;
+}
+.dashboard-list li i 
+{
+    font-size: 24px;
+    color: #929395;
+    border: 1px solid #929395;
+    padding: 5px;
+    border-radius: 50px;
+}
+.dashboard-perfil img
+{
+    margin: 5px;
+    background-color: #54bab1;
+    border-radius: 50px;
+    width: 40px;
+    padding: 1px;
+}
+.navbar-input
+{
+    display: flex;
+    align-items: center;
+    width: 490px;
+    height: 40px;
+    border: 1px solid #929395;
+    border-radius: 20px;
+}
+.navbar-input i 
+{
+    margin: 10px;
+}
+
+.navbar-input input
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
