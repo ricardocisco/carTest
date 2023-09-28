@@ -28,7 +28,7 @@ a {
 .menu-hero {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 650px;
 }
 .aside {
   display: flex;
@@ -82,10 +82,9 @@ a {
 
 .content-box,
 .content-desc {
-
   border-radius: 15px;
   width: 43%;
-  height: 43%;
+  height: 450px;
   margin: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -148,22 +147,18 @@ a {
   width: 100%;
   border-radius: 15px;
 }
-.content-box-img h1
-{
+.content-box-img h1 {
   font-size: 20px;
   color: var(--cor-branca);
 }
-.content-box-img p 
-{
+.content-box-img p {
   font-size: 16px;
   color: var(--cor-branca);
 }
-.content-box-img img 
-{
-  width: 60%;
-  margin-top: 25px;
+.content-box-img img {
+  width: 70%;
+  margin-top: 15px;
 }
-
 @media (max-width: 1240px) {
   .content {
     flex-direction: column;
@@ -189,6 +184,10 @@ a {
   .content-desc p span {
     font-size: 14px;
   }
+  .content-box-img img 
+  {
+    width: 40%;
+  }
   .alugar-dia a {
     color: #ffffff;
     font-size: 16px;
@@ -196,15 +195,70 @@ a {
     padding: 5px 15px;
     border-radius: 10px;
   }
-  .menuToggle{
+  .menuToggle {
     margin: 3px;
   }
-  .slider
-  {
+  .slider {
+    width: 100%;
+  }
+  .content-box-img h1 {
+    font-size: 16px;
+  }
+  .content-box-img p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 764px) {
+  .content {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .content-box,
+  .content-desc {
+    width: 100%;
+    height: 38%;
+  }
+  .content-box-img {
+    height: unset;
+  }
+  .aside {
+    width: 100px;
+  }
+  .lista-aside li p {
+    font-size: 12px;
+  }
+  .content-desc h1 {
+    font-size: 14px;
+  }
+  .content-desc p {
+    font-size: 10px;
+  }
+  .content-desc p span {
+    font-size: 14px;
+  }
+  .alugar-dia a {
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #3083ff;
+    padding: 5px 15px;
+    border-radius: 10px;
+  }
+  .menuToggle {
+    margin: 3px;
+  }
+  .slider {
     width: 100%;
   }
   .content-box-img img 
-{
-  width: 90%;
+  {
+    width: 75%;
+  }
+  .content-box-img h1 {
+    font-size: 16px;
+  }
+  .content-box-img p {
+    font-size: 12px;
+  }
 }
-}
+
