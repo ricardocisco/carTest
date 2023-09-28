@@ -53,44 +53,84 @@
             </div>
         </nav>
         <div class="menu-hero">
+            <div class="menuToggle" onclick="toggleMenu()">☰</div>
             <aside class="aside">
                 <div>
                     <h1>Tipo</h1>
                     <ul class="lista-aside">
                         <li>
                             <input type="checkbox">
-                            <p>Sport</p>
+                            <p>Sport(10)</p>
                         </li>
                         <li>
                             <input type="checkbox">
-                            <p>SUV</p>
+                            <p>SUV(12)</p>
                         </li>
                         <li>
                             <input type="checkbox">
-                            <p>MVP</p>
+                            <p>MVP(16)</p>
                         </li>
                         <li>
                             <input type="checkbox">
-                            <p>Sedan</p>
+                            <p>Sedan(20)</p>
                         </li>
                         <li>
                             <input type="checkbox">
-                            <p>Coupe</p>
+                            <p>Coupe(14)</p>
                         </li>
                         <li>
                             <input type="checkbox">
-                            <p>Hatchback</p>
+                            <p>Hatchback(14)</p>
                         </li>
                     </ul>
+                    <h1>Capacidade</h1>
+                    <ul class="lista-aside">
+                        <li>
+                            <input type="checkbox">
+                            <p>2 Pessoas(12)</p>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <p>4 Pessoas(10)</p>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <p>6 Pessoas(16)</p>
+                        </li>
+                    </ul>
+                    <h1>Preço</h1>
+                        <div class="slider-container">
+                            <input type="range" min="0" max="200" value="50" class="slider" id="mySlider">
+                            <p>Max: R$<span id="sliderValue">50</span></p>
+                        </div>
                 </div>
             </aside>
-            <main>
-                <div>
-
+            <main class="content">
+                <div class="content-box">
+                    <div class="content-box-img">
+                        <h1>Carro esportivo com melhor design e aceleração</h1>
+                        <p>Segurança e conforto ao dirigir um carro esportivo futurista e elegante</p>
+                        <img src="../image/image_catalogo/car2.png" alt="">
+                    </div>
+                </div>
+                <div class="content-desc">
+                    <h1>Nissan GT - R</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget neque non odio facilisis tincidunt. </p>
+                    <div class="content-p-box">
+                        <p>Tipo Carro: <span>Sport</span></p>
+                        <p>Lugares: <span>2 Pessoas</span></p>
+                        <p>Direção: <span>Manual</span></p>
+                        <p>Capacidade: <span>80L</span></p>
+                    </div>
+                    <div class="alugar-dia">
+                        <p>R$80.00/ dia</p>
+                        <a href="">Alugar</a>
+                    </div>
                 </div>
             </main>
         </div>
     </div>
     <script src="../scripts/catalogo.js"></script>
+    <script src="../scripts/detalhe.js"></script>
 </body>
 </html>

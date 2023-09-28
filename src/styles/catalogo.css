@@ -321,6 +321,7 @@ a {
     top: 81px;
     left: 0;
     width: 100%;
+    z-index: 10;
   }
   .dashboard-list .icon-title {
     display: block;
