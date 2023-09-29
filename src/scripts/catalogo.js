@@ -139,7 +139,7 @@ const listaDeClassicos = [
     },
 ]
 
-const classicosHtml = listaDeClassicos.map(item => `
+const classicos = listaDeClassicos.map(item => `
 <div class="carros">
     <h1>${item.titulo}</h1>
     <p>${item.subdesc}</p>
@@ -155,4 +155,4 @@ const classicosHtml = listaDeClassicos.map(item => `
     </div>
 </div>`).join('')
 const listaClassicos = document.getElementById('classicos-carros')
-listaClassicos.innerHTML = classicosHtml
+listaClassicos.innerHTML = classicos

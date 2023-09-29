@@ -154,6 +154,10 @@ a {
   align-items: center;
   justify-content: center;
 }
+.check-area
+{
+  width: 100%;
+}
 .switch a {
   color: #ffffff;
 }
@@ -186,7 +190,7 @@ a {
 .check-input input {
   outline: none;
   border: none;
-  margin: 10px;
+  margin: 3px;
 }
 
 /*input carros */

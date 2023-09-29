@@ -1,136 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/catalogo.css">
-    <link rel="stylesheet" href="../styles/detalhes.css">
-    <link rel="stylesheet" type="text/css" href="../../fontawesome/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/catalogo.css" />
+    <link rel="stylesheet" href="../styles/detalhes.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../fontawesome/css/all.min.css"
+    />
+  </head>
+  <body>
     <div>
-        <nav class="navbar">
-            <div class="navbar-box">
-                <h2>TURBO <span>Alfred</span></h2>
-                <div class="navbar-input">
-                    <a href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                    <input placeholder="Pesquisa">
-                    <a href="#">
-                        <i class="fa-solid fa-sliders"></i>
-                    </a>
-                </div>
-                <div class="dashboard">
-                    <h3>Dashboard</h3>
-                    <div class="dashboard-list">
-                        <li>
-                            <a href="">
-                                <i class="fa-solid fa-heart"></i>
-                                <p class="icon-title">Curtidos</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fa-solid fa-bell"></i>
-                                <p class="icon-title">Notificações</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fa-solid fa-gear"></i>
-                                <p class="icon-title">Configurações</p>
-                            </a>
-                        </li>
-                    </div>
-                    <div class="dashboard-perfil">
-                        <a>
-                            <img class="dashboard-img" src="../image/image_catalogo/perfil.png" alt="">
-                        </a>
-                    </div>
-                </div>
+      <nav class="navbar">
+        <div class="navbar-box">
+          <h2>TURBO <span>Alfred</span></h2>
+          <div class="navbar-input">
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <input placeholder="Pesquisa" />
+            <a href="#">
+              <i class="fa-solid fa-sliders"></i>
+            </a>
+          </div>
+          <div class="dashboard">
+            <h3>Dashboard</h3>
+            <div class="dashboard-list">
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-heart"></i>
+                  <p class="icon-title">Curtidos</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-bell"></i>
+                  <p class="icon-title">Notificações</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-gear"></i>
+                  <p class="icon-title">Configurações</p>
+                </a>
+              </li>
             </div>
-        </nav>
-        <div class="menu-hero">
-            <div class="menuToggle" onclick="toggleMenu()">☰</div>
-            <aside class="aside">
-                <div>
-                    <h1>Tipo</h1>
-                    <ul class="lista-aside">
-                        <li>
-                            <input type="checkbox">
-                            <p>Sport(10)</p>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <p>SUV(12)</p>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <p>MVP(16)</p>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <p>Sedan(20)</p>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <p>Coupe(14)</p>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <p>Hatchback(14)</p>
-                        </li>
-                    </ul>
-                    <h1>Capacidade</h1>
-                    <ul class="lista-aside">
-                        <li>
-                            <input type="checkbox">
-                            <p>2 Pessoas(12)</p>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <p>4 Pessoas(10)</p>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <p>6 Pessoas(16)</p>
-                        </li>
-                    </ul>
-                    <h1>Preço</h1>
-                        <div class="slider-container">
-                            <input type="range" min="0" max="200" value="50" class="slider" id="mySlider">
-                            <p>Max: R$<span id="sliderValue">50</span></p>
-                        </div>
-                </div>
-            </aside>
-            <main class="content">
-                <div class="content-box">
-                    <div class="content-box-img">
-                        <h1>Carro esportivo com melhor design e aceleração</h1>
-                        <p>Segurança e conforto ao dirigir um carro esportivo futurista e elegante</p>
-                        <img src="../image/image_catalogo/car2.png" alt="">
-                    </div>
-                </div>
-                <div class="content-desc">
-                    <h1>Nissan GT - R</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget neque non odio facilisis tincidunt. </p>
-                    <div class="content-p-box">
-                        <p>Tipo Carro: <span>Sport</span></p>
-                        <p>Lugares: <span>2 Pessoas</span></p>
-                        <p>Direção: <span>Manual</span></p>
-                        <p>Capacidade: <span>80L</span></p>
-                    </div>
-                    <div class="alugar-dia">
-                        <p>R$80.00/ dia</p>
-                        <a href="">Alugar</a>
-                    </div>
-                </div>
-            </main>
+            <div class="dashboard-perfil">
+              <a>
+                <img
+                  class="dashboard-img"
+                  src="../image/image_catalogo/perfil.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
         </div>
+      </nav>
+      <div class="menu-hero">
+        <div class="menuToggle" onclick="toggleMenu()">☰</div>
+        <aside class="aside">
+          <div>
+            <h1>Tipo</h1>
+            <ul class="lista-aside">
+              <li>
+                <input type="checkbox" />
+                <p>Sport(10)</p>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <p>SUV(12)</p>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <p>MVP(16)</p>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <p>Sedan(20)</p>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <p>Coupe(14)</p>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <p>Hatchback(14)</p>
+              </li>
+            </ul>
+            <h1>Capacidade</h1>
+            <ul class="lista-aside">
+              <li>
+                <input type="checkbox" />
+                <p>2 Pessoas(12)</p>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <p>4 Pessoas(10)</p>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <p>6 Pessoas(16)</p>
+              </li>
+            </ul>
+            <h1>Preço</h1>
+            <div class="slider-container">
+              <input
+                type="range"
+                min="0"
+                max="200"
+                value="50"
+                class="slider"
+                id="mySlider"
+              />
+              <p>Max: R$<span id="sliderValue">50</span></p>
+            </div>
+          </div>
+        </aside>
+        <main class="content">
+          <div class="content-box">
+            <div class="content-box-img">
+              <h1>Carro esportivo com melhor design e aceleração</h1>
+              <p>
+                Segurança e conforto ao dirigir um carro esportivo futurista e
+                elegante
+              </p>
+              <img src="../image/image_catalogo/car2.png" alt="" />
+            </div>
+            <div class="images-int">
+              <div class="bg-car">
+                <img src="../image/image_catalogo/car2.png" alt="" />
+              </div>
+              <div>
+                <img src="../image/image_catalogo/interior.png" alt="" />
+              </div>
+              <div>
+                <img src="../image/image_catalogo/interior2.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="content-desc">
+            <div class="content-review">
+              <h1>Nissan GT-R</h1>
+              <div>
+                <img
+                  class="ic-actions-star"
+                  src="../image/image_catalogo/estrela-cheia.svg"
+                />
+                <img
+                  class="ic-actions-star"
+                  src="../image/image_catalogo/estrela-cheia.svg"
+                />
+                <img
+                  class="ic-actions-star"
+                  src="../image/image_catalogo/estrela-cheia.svg"
+                />
+                <img
+                  class="ic-actions-star"
+                  src="../image/image_catalogo/estrela-cheia.svg"
+                />
+                <img
+                  class="ic-actions-star"
+                  src="../image/image_catalogo/estrela-vazia.svg"
+                />
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              eget neque non odio facilisis tincidunt.
+            </p>
+            <div class="content-p-box">
+              <p>Tipo Carro: <span>Sport</span></p>
+              <p>Lugares: <span>2 Pessoas</span></p>
+              <p>Direção: <span>Manual</span></p>
+              <p>Capacidade: <span>80L</span></p>
+            </div>
+            <div class="alugar-dia">
+              <p>R$80.00/ dia</p>
+              <a href="">Alugar</a>
+            </div>
+          </div>
+        </main>
+      </div>
+      <main class="review">
+        <div class="review-box">
+          <h1>Reviews <span>12</span></h1>
+          <div>
+            <div class="card-review">
+              <div class="review-box-wrapper">
+                <div>
+                  <img
+                    class="review-img"
+                    src="../image/image_catalogo/review_perfil.png"
+                    alt=""
+                  />
+                  <div class="review-name">
+                    <h2>Alex Stanton</h2>
+                    <p>CEO at Emprecon</p>
+                  </div>
+                </div>
+                <div class="date">
+                  <div class="text-wrapper">21 Julho 2022</div>
+                  <div class="reviews">
+                    <img
+                      class="ic-actions-star"
+                      src="../image/image_catalogo/estrela-cheia.svg"
+                    />
+                    <img
+                      class="ic-actions-star"
+                      src="../image/image_catalogo/estrela-cheia.svg"
+                    />
+                    <img
+                      class="ic-actions-star"
+                      src="../image/image_catalogo/estrela-cheia.svg"
+                    />
+                    <img
+                      class="ic-actions-star"
+                      src="../image/image_catalogo/estrela-cheia.svg"
+                    />
+                    <img
+                      class="ic-actions-star"
+                      src="../image/image_catalogo/estrela-vazia.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                eget neque non odio facilisis tincidunt. Sed auctor hendrerit
+                magna, sit amet vulputate leo eleifend vel.
+              </p>
+            </div>
+            <div class="card-review">
+              <div class="review-box-wrapper">
+                <div>
+                  <img
+                    class="review-img"
+                    src="../image/image_catalogo/review_perfil2.png"
+                    alt=""
+                  />
+                  <div class="review-name">
+                    <h2>Skylar Diaz</h2>
+                    <p>CEO at Copermax</p>
+                  </div>
+                </div>
+                <div class="date">
+                  <div>21 Julho 2022</div>
+                  <div>
+                    <img
+                      class="ic-actions-star"
+                      src="../image/image_catalogo/estrela-cheia.svg"
+                    />
+                    <img
+                      class="ic-actions-star"
+                      src="../image/image_catalogo/estrela-cheia.svg"
+                    />
+                    <img
+                      class="ic-actions-star"
+                      src="../image/image_catalogo/estrela-cheia.svg"
+                    />
+                    <img
+                      class="ic-actions-star"
+                      src="../image/image_catalogo/estrela-cheia.svg"
+                    />
+                    <img
+                      class="ic-actions-star"
+                      src="../image/image_catalogo/estrela-vazia.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                eget neque non odio facilisis tincidunt. Sed auctor hendrerit
+                magna, sit amet vulputate leo eleifend vel.
+              </p>
+            </div>
+          </div>
+          <a href="#">Mostrar Mais ></a>
+        </div>
+      </main>
+      <main class="card-carros-box">
+        <h1>Carros Recentes:</h1>
+        <div class="card-box" id="container-de-cartoes"></div>
+      </main>
+      <footer class="rodape">
+        <div class="rodape-title">
+          <h5>Turbo<span>Alfred</span></h5>
+        </div>
+        <div class="rodape-redes">
+          <p>Redes Sociais</p>
+          <ul class="rodape-list">
+            <li>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
     <script src="../scripts/catalogo.js"></script>
     <script src="../scripts/detalhe.js"></script>
-</body>
+  </body>
 </html>
