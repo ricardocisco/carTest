@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="../styles/pagamento.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../fontawesome/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div>
+      <nav class="navbar">
+        <div class="navbar-box">
+          <h2>TURBO <span>Alfred</span></h2>
+          <div class="dashboard">
+            <div class="dashboard-list">
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-heart"></i>
+                  <p class="icon-title">Curtidos</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-bell"></i>
+                  <p class="icon-title">Notificações</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-gear"></i>
+                  <p class="icon-title">Configurações</p>
+                </a>
+              </li>
+            </div>
+            <div class="dashboard-perfil">
+              <a>
+                <img
+                  class="dashboard-img"
+                  src="../image/image_catalogo/perfil.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="pagamento">
+        <div class="pagamento-box">
+          <div class="box">
+            <div class="box-area">
+              <h1>Informações de pagamento</h1>
+              <p>Passo 1 de 4</p>
+            </div>
+            <div class="pagamento-form-box">
+              <form class="pagamento-form">
+                <div>
+                  <label>Nome</label>
+                  <input placeholder="seu nome completo" />
+                </div>
+                <div>
+                  <label>Endereço</label>
+                  <input placeholder="endereço" />
+                </div>
+              </form>
+              <form class="pagamento-form">
+                <div>
+                  <label>Número de Telefone</label>
+                  <input placeholder="número de telefone" />
+                </div>
+                <div>
+                  <label>Cidade/Bairro</label>
+                  <input placeholder="cidade/bairro" />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-area">
+              <h1>Informações de pagamento</h1>
+              <p>Passo 2 de 4</p>
+            </div>
+            <div class="pagamento-form-box">
+              <form class="check-form">
+                <div class="check">
+                  <div class="check-text">
+                    <i class="fa-solid fa-circle-dot"></i>
+                    <p>Check-in</p>
+                  </div>
+                  <div class="check-area">
+                    <div class="check-input">
+                      <label for="">Localização</label>
+                      <input type="text" placeholder="Selecionar cidade" />
+                    </div>
+                    <div class="check-input">
+                      <label>Data</label>
+                      <input type="date" />
+                    </div>
+                    <div class="check-input">
+                      <label>Horario</label>
+                      <input type="time" />
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <form class="check-form">
+                <div class="check">
+                  <div class="check-text">
+                    <i class="fa-solid fa-circle-dot"></i>
+                    <p>Check-out</p>
+                  </div>
+                  <div>
+                    <div class="check-input">
+                      <label for="">Localização</label>
+                      <input type="text" placeholder="Selecionar cidade" />
+                    </div>
+                    <div class="check-input">
+                      <label>Data</label>
+                      <input type="date" />
+                    </div>
+                    <div class="check-input">
+                      <label>Horario</label>
+                      <input type="time" />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-area">
+              <h1>Informações de pagamento</h1>
+              <p>Passo 3 de 4</p>
+            </div>
+            <div class="pagamento-form-box">
+              <div class="box-cartao">
+                <div class="box-cartao-text">
+                  <i class="fa-solid fa-circle-dot"></i>
+                  <h3>Cartão de crédito</h3>
+                </div>
+                <img src="../image/image_catalogo/cartao.png" alt="" />
+              </div>
+              <form class="pagamento-form">
+                <div>
+                  <label>Numero do Cartão</label>
+                  <input placeholder="Numero do cartão" />
+                </div>
+                <div>
+                  <label>Titular do Cartão</label>
+                  <input placeholder="Titular do cartão" />
+                </div>
+              </form>
+              <form class="pagamento-form">
+                <div>
+                  <label>Data de Expiração</label>
+                  <input placeholder="DD/MM/YY" />
+                </div>
+                <div>
+                  <label>CVC</label>
+                  <input placeholder="CVC" />
+                </div>
+              </form>
+              <div class="type-box">
+                <div class="type-box-card">
+                  <div>
+                    <input type="radio" />
+                    <p>NuBank(Invista e ganhe limite de crédito)</p>
+                  </div>
+                  <img src="../image/image_catalogo/nubank.png" alt="" />
+                </div>
+                <div class="type-box-card">
+                  <div>
+                    <input type="radio" />
+                    <p>C6 Bank(Invista e ganhe limite de crédito)</p>
+                  </div>
+                  <img src="../image/image_catalogo/c6bank.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-area">
+              <h1>Confirmação</h1>
+              <p>Passo 4 de 4</p>
+            </div>
+            <div class="pagamento-form-box">
+              <div class="box-cartao-text">
+                <i class="fa-solid fa-circle-dot"></i>
+                <h3>Confirmação do pedido</h3>
+              </div>
+              <div class="type-box">
+                <div class="type-box-card">
+                  <div>
+                    <input type="checkbox" />
+                    <p>Lorem Ipsum</p>
+                  </div>
+                </div>
+                <div class="type-box-card">
+                  <div>
+                    <input type="checkbox" />
+                    <p>Lorem Ipsum</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button class="botao-alugar">Alugar</button>
+              </div>
+              <img src="../image/image_catalogo/seguro.png" width="80%" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="resumo">
+          <h1>Resumo do aluguel</h1>
+          <p>
+            Os preços podem mudar dependendo da duração do aluguel e do preço do
+            seu carro alugado.
+          </p>
+          <div class="resumo-pagamento">
+            <div class="resumo-imagem">
+              <img
+                class="resumo-car"
+                src="../image/image_catalogo/car2.png"
+                alt=""
+              />
+              <div>
+                <h1>Nissan GT-R</h1>
+                <div class="reviews">
+                  <img
+                    class="ic-actions-star"
+                    src="../image/image_catalogo/estrela-cheia.svg"
+                  />
+                  <img
+                    class="ic-actions-star"
+                    src="../image/image_catalogo/estrela-cheia.svg"
+                  />
+                  <img
+                    class="ic-actions-star"
+                    src="../image/image_catalogo/estrela-cheia.svg"
+                  />
+                  <img
+                    class="ic-actions-star"
+                    src="../image/image_catalogo/estrela-cheia.svg"
+                  />
+                  <img
+                    class="ic-actions-star"
+                    src="../image/image_catalogo/estrela-vazia.svg"
+                  />
+                </div>
+                <div>440+ Reviews</div>
+              </div>
+            </div>
+            <div class="resumo-total">
+              <div class="subtotal">
+                <p>Subtotal</p>
+                <h2>R$80,00</h2>
+              </div>
+              <div class="taxas">
+                <p>Taxas</p>
+                <h2>R$0</h2>
+              </div>
+              <div class="input">
+                <input type="text" placeholder="Cupom" />
+                <button>Aplicar</button>
+              </div>
+              <div class="total">
+                <p>Total Aluguel</p>
+                <h2>R$80,00</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="rodape">
+        <div class="rodape-title">
+          <h5>Turbo<span>Alfred</span></h5>
+        </div>
+        <div class="rodape-redes">
+          <p>Redes Sociais</p>
+          <ul class="rodape-list">
+            <li>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="../scripts/catalogo.js"></script>
+  </body>
+</html>

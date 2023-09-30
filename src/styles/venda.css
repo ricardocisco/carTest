@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+:root {
+  --cor-azul: #3563e9;
+  --cor-texto: #030303;
+  --cor-cinza: #929395;
+  --botao: #3083ff;
+  --cor-branca: #fff;
+  --gradient-xp: #f1f3fc;
+  --footer: #1e242d;
+  --botao-hover: #87b5fb;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #030303;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #929395;
+}
+.navbar-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 65%;
+  height: 80px;
+  margin: 0 auto;
+}
+.navbar h2 {
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--cor-azul);
+}
+
+.navbar span {
+  font-weight: bold;
+}
+.dashboard {
+  display: flex;
+  align-items: center;
+}
+.dashboard h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #929395;
+}
+.dashboard-list {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-list li {
+  margin: 10px;
+}
+.dashboard-list li i {
+  font-size: 24px;
+  color: #929395;
+  border: 1px solid #929395;
+  padding: 5px;
+  border-radius: 50px;
+}
+.dashboard-perfil img {
+  margin: 5px;
+  background-color: #54bab1;
+  border-radius: 50px;
+  width: 40px;
+  padding: 1px;
+}
+
+.dashboard-list .icon-title {
+  display: none;
+}
+
+/*Pagamento*/
+.pagamento {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.pagamento-box {
+  width: 50%;
+  margin: 20px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 35px;
+  border-radius: 15px;
+}
+.box-area {
+  display: flex;
+  justify-content: space-between;
+}
+.box-cartao
+{
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.box-cartao img
+{
+  width: 57px;
+  height: 12px;
+}
+.box-cartao h3
+{
+  font-size: 18px;
+}
+.box-cartao-text
+{
+  display: flex;
+  align-items: center;
+}
+.box-cartao-text i 
+{
+  margin: 5px;
+  color: var(--botao);
+}
+.box-cartao-text h3
+{
+  font-size: 18px;
+  font-weight: 400;
+}
+.box h1 {
+  font-size: 20px;
+}
+.pagamento-form-box
+{
+  padding: 10px;
+}
+
+.pagamento-form
+{
+  display: flex;
+  flex-direction: column;
+}
+.pagamento-form div
+{
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  
+}
+.pagamento-form .check-form, input
+{
+  border: none;
+  outline: none;
+  height: 25px;
+  border-radius: 15px;
+  background-color: #F6F7F9;
+  padding: 20px;
+}
+.pagamento-form input::placeholder
+{
+  color: #333;
+}
+.check-form
+{
+  padding: 20px;
+}
+.check{
+  display: flex;
+  flex-direction: column;
+}
+.check-input
+{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.documento input
+{
+    height: 100%;    
+}
+.type-documento-box div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: unset;
+}
+.type-documento-box input
+{
+    margin: 5px;
+}
+
+.type-box-card
+{
+  padding:5px;
+}
+.type-box-card,
+.type-box-card div{
+  display: flex;
+  align-items: center;
+}
+.type-box-card input
+{
+  margin: 5px;
+  border-radius: 50%;
+}
+.botao-alugar
+{
+  color: #ffffff;
+  font-size: 18px;
+  background-color: #3083ff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  margin: 20px;
+}
+
+/* Resumo Aluguel */
+.resumo {
+  width: 490px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+.resumo h1 {
+  font-size: 18px;
+}
+.resumo p {
+  color: #90a3bf;
+}
+.resumo {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.resumo-pagamento {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.resumo-totalm,
+.resumo-imagem {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.resumo-imagem {
+  display: flex;
+  height: 140px;
+  flex-direction: row;
+  align-items: center;
+}
+.resumo-imagem h1 {
+  font-size: 22px;
+}
+.resumo-car {
+  background-image: url(../image/image_catalogo/bg_catalogo2.png);
+  padding: 15px;
+  width: 40%;
+  border-radius: 15px;
+}
+.resumo-total div {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.resumo-total h2 {
+  font-size: 18px;
+}
+
+.venda,
+.aluguel
+{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/*Rodape*/
+.rodape {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 160px;
+  background-color: #1e242d;
+  padding: 60px;
+}
+.rodape-title h5 {
+  font-size: 32px;
+  color: var(--cor-branca);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.rodape-title h5 span {
+  font-weight: 600;
+}
+.rodape-redes .rodape-list {
+  display: flex;
+  justify-content: space-between;
+}
+.rodape-redes p {
+  font-size: 28px;
+  color: var(--cor-branca);
+}
+
+.rodape-list i {
+  font-size: 25px;
+  color: var(--cor-branca);
+  border: 1px var(--cor-branca) solid;
+  padding: 9px;
+  border-radius: 50px;
+  margin: 5px;
+}
+
+@media (max-width: 1220px) {
+  .anuncio-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-check {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 764px) {
+  .navbar h2 {
+    font-size: 20px;
+  }
+  .navbar-box {
+    width: 90%;
+  }
+  .dashboard h3 {
+    display: none;
+  }
+  .dashboard-list {
+    display: none;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  .dashboard-list .icon-title {
+    display: block;
+  }
+  .dashboard-list li {
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
+  .dashboard-list a i {
+    margin: 5px;
+  }
+  .dashboard-list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dashboard-img {
+    display: flex;
+  }
+  .dashboard-list.active {
+    display: flex;
+  }
+  .resumo
+  {
+    width: 100%;
+    margin: unset;    
+  }
+  .pagamento
+  {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .pagamento-box
+  {
+    width: 100%;
+    margin: unset;
+    margin-top: 20px;
+  }
+  .rodape {
+    padding: 10px;
+  }
+  .rodape-title h5 {
+    font-size: 20px;
+  }
+  .rodape-redes p {
+    font-size: 20px;
+    color: var(--cor-branca);
+  }
+
+  .rodape-list i {
+    font-size: 14px;
+    padding: 6px;
+    margin: 2px;
+  }
+} 
