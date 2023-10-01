@@ -271,6 +271,11 @@ input {
   flex-direction: column;
   align-items: center;
 }
+.um-click div
+{
+  display: flex;
+  align-items: center;
+}
 
 /*Rodape*/
 .rodape {
