@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/dash.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../image/image_catalogo/icon.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../fontawesome/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-box">
+        <a href="/src/index.html" class="navbar-img">
+          <img src="../image/image_catalogo/logo.png" alt="" />
+        </a>
+        <div class="navbar-input">
+          <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <input placeholder="Pesquisa" />
+          <a href="#">
+            <i class="fa-solid fa-sliders"></i>
+          </a>
+        </div>
+        <div class="dashboard">
+          <div class="dashboard-list">
+            <li>
+              <a href="">
+                <i class="fa-solid fa-heart"></i>
+                <p class="icon-title">Curtidos</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-bell"></i>
+                <p class="icon-title">Notificações</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-gear"></i>
+                <p class="icon-title">Configurações</p>
+              </a>
+            </li>
+          </div>
+          <div class="dashboard-perfil">
+            <a>
+              <img
+                class="dashboard-img"
+                src="../image/image_catalogo/perfil.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <aside class="aside">
+      <ul>
+        <h1>Main Menu</h1>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-house"></i>
+            <span href="">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-car"></i>
+            <span href="">Aluguel carro</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-chart-simple"></i>
+            <span href="">Gráficos</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-wallet"></i>
+            <span href="">Reimbolso</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-regular fa-comment"></i>
+            <span href="">Suporte</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-calendar"></i>
+            <span href="">Calendário</span>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <h1>Preferências</h1>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-gear"></i>
+            <span href="">Configurações</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span href="">Emergência</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main class="main">
+      <div class="card card-recente">
+        <h1>Recentes</h1>
+        <img src="../image/image_catalogo/maps.png" alt="" />
+        <div class="image-car">
+          <img
+            class="resumo-car"
+            src="../image/image_catalogo/car2.png"
+            alt=""
+          />
+          <div>
+            <h1>Nissan GT-R</h1>
+            <p>Sport Car</p>
+          </div>
+          <p>#9761</p>
+        </div>
+        <div class="check-box">
+          <form class="check-form">
+            <div>
+              <div class="check-text">
+                <i class="fa-solid fa-circle-dot"></i>
+                <p>Check-in</p>
+              </div>
+              <div class="check-box-input">
+                <div class="check-input">
+                    <label for="">Localização</label>
+                    <input type="text" placeholder="Selecionar cidade" />
+                  </div>
+                  <div class="check-input">
+                    <label>Data</label>
+                    <input type="date" />
+                  </div>
+                  <div class="check-input">
+                    <label>Horario</label>
+                    <input type="time" />
+                  </div>
+              </div>
+            </div>
+          </form>
+          <form class="check-form">
+            <div>
+              <div class="check-text">
+                <i class="fa-solid fa-circle-dot"></i>
+                <p>Check-Out</p>
+              </div>
+              <div class="check-box-input">
+                <div class="check-input">
+                    <label for="">Localização</label>
+                    <input type="text" placeholder="Selecionar cidade" />
+                  </div>
+                  <div class="check-input">
+                    <label>Data</label>
+                    <input type="date" />
+                  </div>
+                  <div class="check-input">
+                    <label>Horario</label>
+                    <input type="time" />
+                  </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </main>
+    <script src="../scripts/catalogo.js"></script>
+  </body>
+</html>
