@@ -1,29 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
-
-:root {
-  --cor-azul: #3563e9;
-  --cor-texto: #030303;
-  --cor-cinza: #929395;
-  --botao: #3083ff;
-  --cor-branca: #fff;
-  --gradient-xp: #f1f3fc;
-  --footer: #1e242d;
-  --botao-hover: #87b5fb;
-}
-
-* {
-  font-family: "Inter", sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-li,
-a {
-  text-decoration: none;
-  list-style: none;
-  color: var(--cor-texto);
-}
+@import url(variaveis.css);
 
 .blue {
   color: var(--cor-azul);
@@ -229,7 +204,7 @@ a {
   height: 110px;
   width: 110px;
   padding: 35px;
-  background: linear-gradient(to bottom, #3083ff, #87b5fb);
+  background: linear-gradient(to bottom, var(--botao), var(--cor-azul-200));
   border-radius: 16px;
   box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.2);
 }
@@ -271,7 +246,7 @@ a {
 
 .bg-exp-box h3 {
   font-weight: 500;
-  color: #acadb3;
+  color: var(--cor-cinza-500);
   font-size: 16px;
   text-align: center;
   letter-spacing: 1.96px;
@@ -279,7 +254,7 @@ a {
 }
 
 .bg-exp-box p {
-  color: #1d1e21;
+  color: var(--cor-texto-500);
   font-size: 32px;
   font-family: Inter;
   font-weight: 500;
@@ -296,7 +271,7 @@ a {
 .card img {
   max-width: 100px;
   margin-right: 15px;
-  background-color: #f1f1f1;
+  background-color: var(--cor-branca);
   width: 60px;
   padding: 18px;
   border-radius: 15px;
@@ -307,7 +282,7 @@ a {
 .card .content h2 {
   font-size: 1rem;
   margin: 0;
-  color: #1d1e21;
+  color: var(--cor-texto-500);
   font-size: 18px;
   font-family: Inter;
   font-weight: 100;
@@ -315,7 +290,7 @@ a {
 }
 .card .content p {
   margin: 10px 0;
-  color: #929395;
+  color: var(--cor-cinza);
   font-size: 14px;
   font-family: Inter;
   font-weight: 400;
@@ -330,18 +305,10 @@ a {
   justify-content: space-between;
   width: 100%;
   height: 160px;
-  background-color: #1e242d;
+  background-color: var(--footer);
   padding: 60px;
 }
-.rodape-title h5 {
-  font-size: 32px;
-  color: var(--cor-branca);
-  text-transform: uppercase;
-  font-weight: 300;
-}
-.rodape-title h5 span {
-  font-weight: 600;
-}
+
 .rodape-redes .rodape-list {
   display: flex;
   justify-content: space-between;
@@ -406,14 +373,23 @@ a {
   .lista-navbar {
     display: none;
     flex-direction: column;
-    background-color: #f1f1f1;
+    background-color: var(--cor-branca);
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 0;
     width: 100%;
   }
   .lojas {
     width: 30%;
+  }
+  .navbar-box {
+    width: 90%;
+  }
+  .navbar-box a {
+    margin: 5px;
+  }
+  .navbar-img img {
+    width: 100px;
   }
   .lista-navbar.active {
     display: flex;
@@ -485,14 +461,10 @@ a {
     margin-top: 480px;
     padding: 10px;
   }
-  .rodape-title h5 {
-    font-size: 20px;
-  }
   .rodape-redes p {
     font-size: 20px;
     color: var(--cor-branca);
   }
-
   .rodape-list i {
     font-size: 14px;
     padding: 6px;

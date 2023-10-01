@@ -56,7 +56,7 @@ const cartoesHtml = listaDeCartoes.map(item =>
     </div>
     <div class="carros-alugar">
         <p>${item.valor}/Dia</p>
-        <button>Alugar</button>
+        <a href="pagamento.html">Alugar/Comprar</a>
     </div>
 </div>`).join('')
 
@@ -151,7 +151,7 @@ const classicos = listaDeClassicos.map(item => `
     </div>
     <div class="carros-alugar">
         <p>${item.valor}/Dia</p>
-        <button>Alugar</button>
+        <a href="pagamento.html">Alugar/Comprar</a>
     </div>
 </div>`).join('')
 const listaClassicos = document.getElementById('classicos-carros')

@@ -1,30 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
-
-:root {
-  --cor-azul: #3563e9;
-  --cor-texto: #030303;
-  --cor-cinza: #929395;
-  --botao: #3083ff;
-  --cor-branca: #fff;
-  --gradient-xp: #f1f3fc;
-  --footer: #1e242d;
-  --botao-hover: #87b5fb;
-}
-
-* {
-  font-family: "Inter", sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-li,
-a {
-  text-decoration: none;
-  list-style: none;
-  color: #030303;
-}
-
+@import url(variaveis.css);
 .menu-hero {
   display: flex;
   width: 100%;
@@ -95,16 +69,16 @@ a {
   justify-content: space-around;
 }
 .content-desc h1 {
-  color: #1a202c;
+  color: var(--cor-texto-300);
   font-size: 28px;
 }
 .content-desc p {
-  color: #90a3bf;
+  color: var(--cor-texto-300);
   font-size: 16px;
   letter-spacing: -0.4px;
 }
 .content-desc p span {
-  color: #596780;
+  color: var(--cor-cinza-400);
   font-size: 18px;
 }
 .content-p-box {
@@ -123,10 +97,10 @@ a {
 }
 .alugar-dia p {
   font-size: 22px;
-  color: #1a202c;
+  color: var(--cor-texto-300);
 }
 .alugar-dia a {
-  color: #ffffff;
+  color: var(--cor-branca);
   font-size: 22px;
   background-color: #3083ff;
   padding: 10px 25px;
@@ -206,7 +180,7 @@ a {
 .review-box span {
   padding: 8px;
   border-radius: 4px;
-  background-color: #3083ff;
+  background-color: var(--botao);
   color: var(--cor-branca);
   font-size: 20px;
 }
@@ -268,9 +242,9 @@ a {
     width: 50%;
   }
   .alugar-dia a {
-    color: #ffffff;
+    color: var(--cor-branca);
     font-size: 16px;
-    background-color: #3083ff;
+    background-color: var(--botao);
     padding: 5px 15px;
     border-radius: 10px;
   }
@@ -289,6 +263,15 @@ a {
 }
 
 @media (max-width: 764px) {
+  .navbar-box {
+    width: 90%;
+  }
+  .navbar-box a {
+    margin: 5px;
+  }
+  .navbar-img img {
+    width: 100px;
+  }
   .content {
     flex-direction: column;
     justify-content: space-around;
@@ -317,9 +300,9 @@ a {
     font-size: 14px;
   }
   .alugar-dia a {
-    color: #ffffff;
+    color: var(--cor-branca);
     font-size: 16px;
-    background-color: #3083ff;
+    background-color: var(--botao);
     padding: 5px 15px;
     border-radius: 10px;
   }

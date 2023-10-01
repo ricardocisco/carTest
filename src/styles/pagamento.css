@@ -1,34 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
-
-:root {
-  --cor-azul: #3563e9;
-  --cor-texto: #030303;
-  --cor-cinza: #929395;
-  --botao: #3083ff;
-  --cor-branca: #fff;
-  --gradient-xp: #f1f3fc;
-  --footer: #1e242d;
-  --botao-hover: #87b5fb;
-}
-
-* {
-  font-family: "Inter", sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-li,
-a {
-  text-decoration: none;
-  list-style: none;
-  color: #030303;
-}
+@import url(variaveis.css);
 
 .navbar {
   display: flex;
   width: 100%;
-  border-bottom: 1px solid #929395;
+  border-bottom: 1px solid var(--cor-cinza);
 }
 .navbar-box {
   display: flex;
@@ -54,7 +29,7 @@ a {
 .dashboard h3 {
   font-size: 18px;
   font-weight: 500;
-  color: #929395;
+  color: var(--cor-cinza);
 }
 .dashboard-list {
   display: flex;
@@ -66,14 +41,14 @@ a {
 }
 .dashboard-list li i {
   font-size: 24px;
-  color: #929395;
-  border: 1px solid #929395;
+  color: var(--cor-cinza);
+  border: 1px solid var(--cor-cinza);
   padding: 5px;
   border-radius: 50px;
 }
 .dashboard-perfil img {
   margin: 5px;
-  background-color: #54bab1;
+  background-color: var(--cor-azul-marinho);
   border-radius: 50px;
   width: 40px;
   padding: 1px;
@@ -106,118 +81,99 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.box-cartao
-{
+.box-cartao {
   padding: 25px;
   display: flex;
   justify-content: space-between;
 }
-.box-cartao img
-{
+.box-cartao img {
   width: 57px;
   height: 12px;
 }
-.box-cartao h3
-{
+.box-cartao h3 {
   font-size: 18px;
 }
-.box-cartao-text
-{
+.box-cartao-text {
   display: flex;
   align-items: center;
 }
-.box-cartao-text i 
-{
+.box-cartao-text i {
   margin: 5px;
   color: var(--botao);
 }
-.box-cartao-text h3
-{
+.box-cartao-text h3 {
   font-size: 18px;
   font-weight: 400;
 }
 .box h1 {
   font-size: 20px;
 }
-.pagamento-form-box
-{
+.pagamento-form-box {
   padding: 10px;
 }
 
-.pagamento-form
-{
+.pagamento-form {
   display: flex;
   flex-direction: column;
 }
-.pagamento-form div
-{
+.pagamento-form div {
   display: flex;
   padding: 10px;
   flex-direction: column;
-  
 }
-.pagamento-form .check-form, input
-{
+.pagamento-form .check-form,
+input {
   border: none;
   outline: none;
   height: 25px;
   border-radius: 15px;
-  background-color: #F6F7F9;
+  background-color: var(--cor-branca-300);
   padding: 20px;
 }
-.pagamento-form input::placeholder
-{
+.pagamento-form input::placeholder {
   color: #333;
 }
-.check-form
-{
+.check-form {
   padding: 20px;
 }
-.check{
+.check {
   display: flex;
   flex-direction: column;
 }
-.check-text
-{
+.check-text {
   display: flex;
   align-items: center;
 }
-.check-text i
-{
+.check-text i {
   margin: 5px;
   color: var(--botao);
 }
-.check-input
-{
+.check-input {
   display: flex;
   flex-direction: column;
   margin: 10px;
 }
 
-.type-box-card
-{
-  padding:5px;
+.type-box-card {
+  padding: 5px;
 }
 .type-box-card,
-.type-box-card div{
+.type-box-card div {
   display: flex;
   align-items: center;
 }
-.type-box-card img
-{
+.type-box-card img {
   width: 40px;
   height: 25px;
 }
-.type-box-card input
-{
+.type-box-card input {
   margin: 5px;
   border-radius: 50%;
 }
-.botao-alugar
-{
-  color: #ffffff;
+.botao-alugar {
+  color: var(--cor-branca);
   font-size: 18px;
-  background-color: #3083ff;
+  background-color: var(--botao);
   padding: 10px 15px;
   border-radius: 10px;
   border: none;
@@ -238,7 +194,7 @@ a {
   font-size: 18px;
 }
 .resumo p {
-  color: #90a3bf;
+  color: var(--cor-cinza-200);
 }
 .resumo {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -278,7 +234,6 @@ a {
 .resumo-total h2 {
   font-size: 18px;
 }
-
 .subtotal,
 .taxas,
 .input,
@@ -290,7 +245,7 @@ a {
 .input {
   display: flex;
   align-items: center;
-  background: #F6F7F9;
+  background: var(--cor-branca-300);
   height: 50px;
   padding: 10px;
   border-radius: 10px;
@@ -310,6 +265,13 @@ a {
 .total {
   font-size: 18px;
 }
+.um-click
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*Rodape*/
 .rodape {
   margin-top: 20px;
@@ -318,7 +280,7 @@ a {
   justify-content: space-between;
   width: 100%;
   height: 160px;
-  background-color: #1e242d;
+  background-color: var(--footer);
   padding: 60px;
 }
 .rodape-title h5 {
@@ -365,13 +327,19 @@ a {
   .navbar-box {
     width: 90%;
   }
+  .navbar-box a {
+    margin: 5px;
+  }
+  .navbar-img img {
+    width: 100px;
+  }
   .dashboard h3 {
     display: none;
   }
   .dashboard-list {
     display: none;
     flex-direction: column;
-    background-color: #f1f1f1;
+    background-color: var(--cor-branca);
     position: absolute;
     top: 81px;
     left: 0;
@@ -400,29 +368,24 @@ a {
   .dashboard-list.active {
     display: flex;
   }
-  .resumo
-  {
+  .resumo {
     width: 100%;
-    margin: unset;    
+    margin: unset;
   }
-  .pagamento
-  {
+  .pagamento {
     display: flex;
     flex-direction: column-reverse;
   }
-  .pagamento-box
-  {
+  .pagamento-box {
     width: 100%;
     margin: unset;
     margin-top: 20px;
   }
-  .input button
-  {
+  .input button {
     border: none;
     background: none;
   }
-  .input input
-  {
+  .input input {
     width: 100%;
   }
   .rodape {
@@ -441,4 +404,4 @@ a {
     padding: 6px;
     margin: 2px;
   }
-} 
+}

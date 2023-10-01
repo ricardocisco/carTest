@@ -1,21 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
-
-* {
-  font-family: "Inter", sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-li,
-a {
-  text-decoration: none;
-  list-style: none;
-  color: #030303;
-}
+@import url(variaveis.css);
 
 body {
-  height: 100vh;
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-rows: 80px 1fr;
@@ -52,7 +37,7 @@ body {
 .dashboard h3 {
   font-size: 18px;
   font-weight: 500;
-  color: #929395;
+  color: var(--cor-cinza);
 }
 .dashboard-list {
   display: flex;
@@ -64,14 +49,14 @@ body {
 }
 .dashboard-list li i {
   font-size: 24px;
-  color: #929395;
-  border: 1px solid #929395;
+  color: var(--cor-cinza);
+  border: 1px solid var(--cor-cinza);
   padding: 5px;
   border-radius: 50px;
 }
 .dashboard-perfil img {
   margin: 5px;
-  background-color: #54bab1;
+  background-color: var(--cor-azul-marinho);
   border-radius: 50px;
   width: 40px;
   padding: 1px;
@@ -86,7 +71,7 @@ body {
   align-items: center;
   width: 490px;
   height: 40px;
-  border: 1px solid #929395;
+  border: 1px solid var(--cor-cinza);
   border-radius: 20px;
 }
 .navbar-input i {
@@ -101,46 +86,39 @@ body {
 }
 .aside {
   grid-area: aside;
-  border: 1px solid #e1e1e1;
+  border: 1px solid var(--cor-branca-200);
 }
-.aside ul
-{
+.aside ul {
   padding: 20px;
 }
-.aside ul h1 
-{
+.aside ul h1 {
   font-weight: 600;
-  color: #93a6ca66;
+  color: var(--cor-cinza-300);
   font-size: 12px;
 }
-.aside ul li 
-{
+.aside ul li {
   padding: 10px;
 }
 
-.aside ul li a 
-{
+.aside ul li a {
   font-weight: 600;
-  color: #93a6ca;
+  color: var(--cor-texto-400);
   font-size: 20px;
   padding: 5px;
   display: flex;
   align-items: center;
 }
-.aside ul li a i
-{
+.aside ul li a i {
   padding: 10px;
 }
-.aside ul li a:hover
-{
-  background-color: #3083ff;
-  color: #fff;
+.aside ul li a:hover {
+  background-color: var(--botao);
+  color: var(--cor-branca);
   border-radius: 15px;
 }
 
-
 .main {
-  background-color: #f6f7f9;
+  background-color: var(--cor-branca-300);
   grid-area: main;
   padding: 20px;
 
@@ -153,7 +131,7 @@ body {
   gap: 20px;
 }
 .card {
-  background-color: #fff;
+  background-color: var(--cor-branca);
   border-radius: 10px;
 }
 .card:nth-child(1) {
@@ -163,27 +141,26 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.card-recente img
-{
+.card-recente h1 {
+  font-size: 20px;
+}
+.card-recente img {
   width: 80%;
 }
-.image-car
-{
+.image-car {
   margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 80%;
 }
-.image-car img 
-{
+.image-car img {
   width: 40%;
   height: 100%;
 }
-.image-car h1
-{
+.image-car h1 {
   font-weight: 700;
-  color: #1a202c;
+  color: var(--cor-texto-300);
   font-size: 24px;
 }
 .resumo-car {
@@ -191,59 +168,230 @@ body {
   padding: 15px;
   border-radius: 15px;
 }
-.check-box
-{
-  width: 80%;
-}
-.check-form
-{
+.check-form {
   display: flex;
 }
-.check-text
-{
+.check-text {
   display: flex;
   align-items: center;
   margin: 5px;
 }
-.check-text i 
-{
-  color: #3083ff;
+.check-text i {
+  color: var(--botao);
   margin: 5px;
 }
-.check-box-input
-{
+.check-box-input {
   display: flex;
 }
-.check-input
-{
+.check-input {
   display: flex;
   flex-direction: column;
   margin: 10px;
 }
-.check-input input
-{
+.check-input input {
   padding: 5px;
   border: none;
   outline: none;
 }
-.check-input label
-{
+.check-input label {
   font-weight: 700;
-  color: #1a202c;
+  color: var(--cor-texto-300);
   font-size: 16px;
 }
-
+.total {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.total h1 {
+  font-size: 16px;
+}
+.total p {
+  font-size: 22px;
+}
+.func {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.func h1 {
+  font-size: 16px;
+}
+.func img {
+  height: 50px;
+  width: 50px;
+}
+.func-box {
+  display: flex;
+  margin-top: 20px;
+}
+.func-box a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+}
 
 /*CARD 2*/
 .card:nth-child(2) {
-    grid-area: c2;
-  }
-  .card:nth-child(3) {
-    grid-area: c3;
-  }
-@media (max-width: 1024px) {
+  grid-area: c2;
+}
+.top-card {
+  padding: 20px;
+}
+.top-text {
+  display: flex;
+  justify-content: space-between;
+}
+.top-text h1 {
+  font-weight: 700;
+  color: var(--cor-texto-300);
+  font-size: 20px;
+}
+.top-text img {
+  width: 20px;
+}
+.top-graph {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+.top-graph-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-graph-div h1 {
+  font-weight: 700;
+  color: var(--cor-texto-300);
+  font-size: 24px;
+}
+.top-graph-div p {
+  font-weight: 500;
+  color: var(--cor-cinza-200);
+  font-size: 14px;
+}
+.top-graph-div img {
+  width: 65%;
+}
+.top-text-car {
+  width: 50%;
+}
+.sport-car,
+.suv,
+.coupe,
+.hatchback,
+.mvp {
+  display: flex;
+  justify-content: space-between;
+}
+.div {
+  display: flex;
+  align-items: center;
+}
+.sport-car .mark {
+  width: 12px;
+  height: 12px;
+  background-color: #a6cef2;
+  border-radius: 70px;
+}
+.suv .mark {
+  width: 12px;
+  height: 12px;
+  background-color: #175d9c;
+  border-radius: 70px;
+}
+.coupe .mark {
+  width: 12px;
+  height: 12px;
+  border-radius: 70px;
+  background-color: #2185de;
+}
+.hatchback .mark {
+  width: 12px;
+  height: 12px;
+  background-color: #63a9e8;
+  border-radius: 70px;
+}
+.mvp .mark {
+  width: 12px;
+  height: 12px;
+  background-color: #a6cef2;
+  border-radius: 70px;
+}
+/*CARD 3*/
+.card:nth-child(3) {
+  grid-area: c3;
+}
+.recentes {
+  padding: 20px;
+}
+.recentes-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+.recentes-text h1 {
+  font-weight: 700;
+  color: var(--cor-texto-300);
+  font-size: 20px;
+}
+.recentes-text a {
+  font-weight: 500;
+  color: var(--cor-azul);
+  font-size: 12px;
+}
+.div {
+  margin: 10px;
+  display: flex;
+  border-bottom: 1px solid var(--cor-branca-200);
+  padding: 5px;
+  justify-content: space-between;
+}
+.div img {
+  width: 40%;
+  height: 100%;
+}
+
+.car-name {
+  display: flex;
+}
+.car-name h1 {
+  font-weight: 700;
+  color: var( --cor-texto-300);
+  font-size: 16px;
+}
+.car-name-box {
+  margin: 10px;
+}
+
+@media (max-width: 1100px) {
   body {
     grid-template-columns: 200px 1fr;
+  }
+  .aside ul li a {
+    font-size: 14px;
+  }
+  .top-graph {
+    display: block;
+    margin-top: 20px;
+  }
+  .top-text-car {
+    width: unset;
+  }
+  .sport-car,
+  .suv,
+  .coupe,
+  .hatchback,
+  .mvp {
+    align-items: center;
   }
 }
 
@@ -260,7 +408,7 @@ body {
   .dashboard-list {
     display: none;
     flex-direction: column;
-    background-color: #f1f1f1;
+    background-color: var(--cor-branca);
     position: absolute;
     top: 81px;
     left: 0;
@@ -293,20 +441,8 @@ body {
     width: 100px;
   }
   body {
-    height: 200vh;
-  }
-  .main {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "c1";
-    gap: unset;
-  }
-}
-@media (max-width: 415px) {
-  
-  body {
-    grid-template-columns: 1fr;
-    grid-template-rows: 80px 130px 1fr;
+    grid-template-rows: 80px 1fr;
     grid-template-areas:
       "nav nav"
       "aside aside"
@@ -315,12 +451,47 @@ body {
   }
   .main {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "c1"
-    "c1"
-    "c2"
-    "c3";
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "c1"
+      "c2"
+      "c3";
     gap: 20px;
+  }
+  .check-box-input {
+    display: block;
+  }
+  .image-car {
+    width: unset;
+  }
+  .image-car h1 {
+    font-size: 18px;
+  }
+  .func {
+    margin-top: 20px;
+  }
+  .func h1 {
+    font-size: 12px;
+  }
+  .func img {
+    height: 40px;
+    width: 40px;
+  }
+  .func-box {
+    margin-top: 20px;
+    display: flex;
+  }
+  .func-box a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+  }
+  .aaside li
+  {
+    padding: 10px;
+  }
+  .aside ul {
+    padding: 10px;
   }
 }

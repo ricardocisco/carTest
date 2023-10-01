@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+:root {
+  --cor-azul: #3563e9;
+  --cor-azul-200: #87b5fb;
+  --cor-texto: #030303;
+  --cor-texto-300: #1a202c;
+  --cor-texto-400: #93a6ca;
+  --cor-texto-500:#1d1e21;
+  --cor-cinza: #929395;
+  --cor-cinza-200: #90a3bf;
+  --cor-cinza-300: #93a6ca66;
+  --cor-cinza-400: #596780;
+  --cor-cinza-500: #acadb3;
+  --botao: #3083ff;
+  --cor-branca: #fff;
+  --gradient-xp: #f1f3fc;
+  --cor-branca-200: #e1e1e1;
+  --cor-branca-300: #f6f7f9;
+  --footer: #1e242d;
+  --botao-hover: #87b5fb;
+  --cor-azul-marinho: #54bab1;
+}
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--cor-texto);
+}
+a {
+  cursor: pointer;
+}
